@@ -23,7 +23,7 @@ Preview the example live on [StackBlitz](http://stackblitz.com/):
 
 Once you have access to your [Sentry DSN](https://docs.sentry.io/product/sentry-basics/dsn-explainer/#where-to-find-your-dsn), deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/natterstefan/next-with-sentry&project-name=next-with-sentry&repository-name=next-with-sentry&env=NEXT_PUBLIC_SENTRY_DSN&envDescription=DSN%20Key%20required%20by%20Sentry&envLink=https://github.com/natterstefan/next-with-sentry%23step-1-enable-error-tracking)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fnatterstefan%2Fnext-with-sentry&env=SENTRY_DSN,SENTRY_URL,SENTRY_ORG,SENTRY_PROJECT,SENTRY_AUTH_TOKEN&project-name=next-with-sentry&repository-name=next-with-sentry)
 
 Check out [Sentry’s Vercel Integration](#sentry-integration).
 
@@ -42,6 +42,9 @@ yarn create next-app --example with-sentry with-sentry-app
 You can [configure your app automatically](https://docs.sentry.io/platforms/javascript/guides/nextjs/#configure) or do the [manual setup](https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/).
 Both ways lead to having your custom config files (`next.config.js`, `sentry.client.config.js`, `sentry.server.config.js`, and `sentry.properties`); so you can delete them from the example, they are here to illustrate how an example app looks like.
 
+ATTENTION: we do not use `sentry.properties` but set the variables of that file
+in the `.env` instead!
+
 ## Deploy on Vercel
 
 You can deploy this app to the cloud with [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
@@ -56,7 +59,7 @@ To deploy your local project to Vercel, push it to GitHub/GitLab/Bitbucket and [
 
 Alternatively, you can deploy using our template by clicking on the Deploy button below.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/natterstefan/next-with-sentry&project-name=next-with-sentry&repository-name=next-with-sentry&env=NEXT_PUBLIC_SENTRY_DSN&envDescription=DSN%20Key%20required%20by%20Sentry&envLink=https://github.com/natterstefan/next-with-sentry%23step-1-enable-error-tracking)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fnatterstefan%2Fnext-with-sentry&env=SENTRY_DSN,SENTRY_URL,SENTRY_ORG,SENTRY_PROJECT,SENTRY_AUTH_TOKEN&project-name=next-with-sentry&repository-name=next-with-sentry)
 
 ## Sentry Integration
 
