@@ -13,6 +13,9 @@ const withGraphql = require('next-plugin-graphql')
 
 const moduleExports = {
   future: { webpack5: true },
+  publicRuntimeConfig: {
+    dns: process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN
+  }
 }
 
 const SentryWebpackPluginOptions = {
