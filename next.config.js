@@ -1,8 +1,11 @@
-// This file sets a custom webpack configuration to use your Next.js app
-// with Sentry.
-// https://nextjs.org/docs/api-reference/next.config.js/introduction
-// https://docs.sentry.io/platforms/javascript/guides/nextjs/
-
+/**
+ * This file sets a custom webpack configuration to use your Next.js app
+ * with Sentry.
+ * 
+ * @see https://nextjs.org/docs/api-reference/next.config.js/introduction
+ * @see https://docs.sentry.io/platforms/javascript/guides/nextjs/
+ * @see https://blog.sentry.io/2020/08/04/enable-suspect-commits-unminify-js-and-track-releases-with-vercel-and-sentry
+ */
 const { withSentryConfig } = require('@sentry/nextjs')
 const withPlugins = require('next-compose-plugins')
 // demo plugin demonstrating how to use @sentry/nextjs with next-compose-plugins
