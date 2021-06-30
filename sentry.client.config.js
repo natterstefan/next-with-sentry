@@ -7,6 +7,8 @@ import getConfig from 'next/config'
 
 const SENTRY_DSN = getConfig().publicRuntimeConfig.dns
 
+console.log('----- init Sentry')
+
 Sentry.init({
   dsn: SENTRY_DSN,
   // Note: if you want to override the automatic release value, do not set a
