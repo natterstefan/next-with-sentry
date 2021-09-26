@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
+    "format": "prettier pages -w",
     "build": "next build",
     "start": "next start"
   },
