@@ -9,13 +9,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "@sentry/nextjs": "^6.8.0",
-    "next": "^10.2.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@sentry/nextjs": "6.13.2",
+    "next": "10.2.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "next-compose-plugins": "^2.2.1",
-    "next-plugin-graphql": "^0.0.2"
+    "next-compose-plugins": "2.2.1",
+    "next-plugin-graphql": "0.0.2",
+    "prettier": "^2.4.1"
   }
 }
