@@ -10,6 +10,7 @@ async function handler(req, res) {
   // Flushing before returning is necessary if deploying to Vercel, see
   // https://vercel.com/docs/platform/limits#streaming-responses
   await Sentry.flush(2000)
+
   res.status(200).json({ name: 'John Doe' })
 }
 

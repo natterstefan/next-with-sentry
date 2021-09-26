@@ -7,11 +7,11 @@ export async function getServerSideProps() {
     throw new Error('SSR Test 4')
   } catch (error) {
     Sentry.captureException(error)
-
-    // Flushing before returning is necessary if deploying to Vercel, see
-    // https://vercel.com/docs/platform/limits#streaming-responses
-    await Sentry.flush(2000)
   }
+
+  // Flushing before returning is necessary if deploying to Vercel, see
+  // https://vercel.com/docs/platform/limits#streaming-responses
+  await Sentry.flush(2000)
 
   return { props: {} }
 }

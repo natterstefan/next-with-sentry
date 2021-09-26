@@ -1,7 +1,7 @@
 /**
  * This file sets a custom webpack configuration to use your Next.js app
  * with Sentry.
- * 
+ *
  * @see https://nextjs.org/docs/api-reference/next.config.js/introduction
  * @see https://docs.sentry.io/platforms/javascript/guides/nextjs/
  * @see https://blog.sentry.io/2020/08/04/enable-suspect-commits-unminify-js-and-track-releases-with-vercel-and-sentry
@@ -12,10 +12,9 @@ const withPlugins = require('next-compose-plugins')
 const withGraphql = require('next-plugin-graphql')
 
 const moduleExports = {
-  future: { webpack5: true },
   publicRuntimeConfig: {
-    dns: process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN
-  }
+    dns: process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN,
+  },
 }
 
 const SentryWebpackPluginOptions = {

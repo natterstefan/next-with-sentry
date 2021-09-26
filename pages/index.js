@@ -4,8 +4,20 @@ import Image from 'next/image'
 const Index = () => (
   <div style={{ maxWidth: 700, margin: '0 auto' }}>
     <h2>Sentry Simple Example 🚨</h2>
-    <Image src="/pexels-polina-zimmerman-3747139.jpg" width="200" height="200"/>
-    <p><a href="https://www.pexels.com/photo/black-smartphone-displaying-error-3747139/" target="_blank" rel="noopener noreferrer">Image Source</a></p>
+    <Image
+      src="/pexels-polina-zimmerman-3747139.jpg"
+      width="200"
+      height="200"
+    />
+    <p>
+      <a
+        href="https://www.pexels.com/photo/black-smartphone-displaying-error-3747139/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Image Source
+      </a>
+    </p>
     <p>
       This example demonstrates how to record unhandled exceptions in your code
       with Sentry. There are several test pages below that result in various
