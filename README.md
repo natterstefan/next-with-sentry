@@ -29,12 +29,13 @@ Check out [Sentry’s Vercel Integration](#sentry-integration).
 
 ## How To Use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
 ```bash
-npx create-next-app --example with-sentry with-sentry-app
-# or
-yarn create next-app --example with-sentry with-sentry-app
+yarn install
+yarn dev
+
+# or build and run in production mode
+yarn build
+yarn start
 ```
 
 ## Configuration
@@ -42,8 +43,7 @@ yarn create next-app --example with-sentry with-sentry-app
 You can [configure your app automatically](https://docs.sentry.io/platforms/javascript/guides/nextjs/#configure) or do the [manual setup](https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/).
 Both ways lead to having your custom config files (`next.config.js`, `sentry.client.config.js`, `sentry.server.config.js`, and `sentry.properties`); so you can delete them from the example, they are here to illustrate how an example app looks like.
 
-ATTENTION: we do not use `sentry.properties` but set the variables of that file
-in the `.env` instead!
+ATTENTION: we do not use `sentry.properties` but set the variables of that file in the `.env` instead!
 
 ## Deploy on Vercel
 
